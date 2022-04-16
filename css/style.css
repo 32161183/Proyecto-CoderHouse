@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor{
+    display: grid;
+   grid-template-columns: 150px;
+   grid-template-rows: 100px 50px 400px 50px;
+
+
+    grid-template-areas: 
+    "header"
+    "nav"
+    "nav"
+    "nav"
+    "section"
+    "footer";
+}
+
+header{
+    background-color: rgb(234, 245, 245);
+    grid-area: header;
+    background-image: url(../img/Red-tipo-cuadro.png);
+    background-size: contain;
+    
+}
+
+nav{
+    background-color: rgb(242, 243, 246);
+    grid-area: nav;
+    
+    background-size: contain;
+}
+
+section{
+    background-color: rgb(229, 215, 241);
+    grid-area: section;
+    background-image: url(../img/cuico\ padel.jpg);
+    background-size: 100%;
+    
+}
+
+footer{
+    background-color: chocolate;
+    grid-area: footer;
+   
+}
+
+.imgfondo{
+     height: 500px;
+}
+
+.pel{
+    height: 50px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 16px;
+    
+    
+    
+}
+.nav ul li{
+    display: block;
+    border-radius: 50px;
+    list-style: none;
+    font-size: 1.3em;
+    color: white;
+    padding: 20px;
+    
+}
+
+
+
+
+.adidas{
+    margin: 10px 20px 5px 11px ;
+    background-color: rgb(118, 164, 205);
+    border: 5px solid white;
+    border-radius: 10%;
+    padding: 20px 10px ;
+    width: 15%; 
+    
+}
+.buulpadel{
+    margin: 10px 20px 5px 11px ;
+    background-color: rgb(96, 153, 189);
+    border: 5px solid white;
+    border-radius: 10%;
+    padding: 20px 10px ;
+    width: 15%;
+}
+.nox{
+    margin: 10px 20px 5px 11px ;
+    background-color: rgb(118, 205, 204);
+    border: 5px solid white;
+    border-radius: 10%;
+    padding: 20px 10px ;
+    width: 15%;
+}
+.royal{
+    margin: 10px 20px 5px 11px ;
+    background-color: rgb(95, 166, 184);
+    border: 5px solid white;
+    border-radius: 10%;
+    padding: 20px 10px ;
+    width: 15%;
+}
+.wilson{
+    margin: 10px 20px 5px 11px ;
+    background-color: rgb(102, 185, 192);
+    border: 5px solid white;
+    border-radius: 10%;
+    padding: 20px 10px ;
+    width: 15%;
+}
+    
+.contact{
+    margin:30px;
+    padding: 20px;
+    color: rgb(104, 113, 58);
+    
+}
+
+.gps{
+    margin: 50px;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #56b3e9;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+
+
+@media(min-width:500px){
+    .contenedor{
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "header header "
+        "nav nav"
+        "section section"
+        "section section"
+        "section section"
+        "footer footer";
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid black;
+        border: 2cm;
+    }
+}
+
+@media(min-width:700px){
+    .contenedor{
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "section section section"
+        "section section section"
+        "section section section"
+        "footer footer footer";
+    }
+
+   
+}
