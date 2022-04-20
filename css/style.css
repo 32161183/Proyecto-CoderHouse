@@ -1,79 +1,67 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
 }
 
-
-.contenedor{
-    display: grid;
-   grid-template-columns: 150px;
-   grid-template-rows: 100px 50px 400px 50px;
-
-
-    grid-template-areas: 
-    "header"
-    "nav"
-    "nav"
-    "nav"
-    "section"
-    "footer";
+.navbar-brand:hover{
+    color: black;
 }
-
-header{
-    background-color: rgb(234, 245, 245);
-    grid-area: header;
-    background-image: url(../img/Red-tipo-cuadro.png);
-    background-size: contain;
-    
+.nav-link{
+    margin: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
 }
-
-nav{
-    background-color: rgb(242, 243, 246);
-    grid-area: nav;
-    
-    background-size: contain;
+.nav-link:hover{
+    color: black;
 }
-
-section{
-    background-color: rgb(229, 215, 241);
-    grid-area: section;
-    background-image: url(../img/cuico\ padel.jpg);
-    background-size: 100%;
-    
+.search{
+    height: 40%;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    border: 2px solid blue;
 }
-
-footer{
-    background-color: chocolate;
-    grid-area: footer;
-   
-}
-
-.imgfondo{
-     height: 500px;
-}
-
-.pel{
-    height: 50px;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 16px;
-    
-    
-    
-}
-.nav ul li{
-    display: block;
-    border-radius: 50px;
-    list-style: none;
-    font-size: 1.3em;
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: blue;
     color: white;
-    padding: 20px;
-    
+    border-radius: 60px;
+    font-weight: 700;
 }
+
+.main{
+    background: url(./img/cuico\ padel.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+}
+
+.main h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.btn1{
+    height: 45px;
+    width: 35%;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+    border-radius: 60px;
+}
+
 
 
 
