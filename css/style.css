@@ -29,7 +29,7 @@
     border: 2px solid blue;
 }
 .btn0{
-    height: 40px;
+    height: 28px;
     width: 40%;
     outline: none;
     border: none;
@@ -40,7 +40,7 @@
 }
 
 .main{
-    background: url(./img/cuico\ padel.jpg) no-repeat;
+    background: url("../img/cuico\ padel\ copy.jpg") ;
     background-size: cover;
     height: 100vh;
     background-position: 50% 50%;
@@ -62,110 +62,35 @@
     border-radius: 60px;
 }
 
-
-
-
-
-.adidas{
-    margin: 10px 20px 5px 11px ;
-    background-color: rgb(118, 164, 205);
-    border: 5px solid white;
-    border-radius: 10%;
-    padding: 20px 10px ;
-    width: 15%; 
-    
+.btn1:hover{
+    background-color: rgb(0, 200, 255);
+    transition: 0.5s;
 }
-.buulpadel{
-    margin: 10px 20px 5px 11px ;
-    background-color: rgb(96, 153, 189);
-    border: 5px solid white;
-    border-radius: 10%;
-    padding: 20px 10px ;
-    width: 15%;
+h1{
+    font-weight: 700;
 }
-.nox{
-    margin: 10px 20px 5px 11px ;
-    background-color: rgb(118, 205, 204);
-    border: 5px solid white;
-    border-radius: 10%;
-    padding: 20px 10px ;
-    width: 15%;
-}
-.royal{
-    margin: 10px 20px 5px 11px ;
-    background-color: rgb(95, 166, 184);
-    border: 5px solid white;
-    border-radius: 10%;
-    padding: 20px 10px ;
-    width: 15%;
-}
-.wilson{
-    margin: 10px 20px 5px 11px ;
-    background-color: rgb(102, 185, 192);
-    border: 5px solid white;
-    border-radius: 10%;
-    padding: 20px 10px ;
-    width: 15%;
-}
-    
-.contact{
-    margin:30px;
-    padding: 20px;
-    color: rgb(104, 113, 58);
-    
+.card:hover{
+    box-shadow: -15px -8px 48px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -15px -8px 48px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -15px -8px 48px -10px rgba(0,0,0,0.75);
+    transition: 0.5s;
 }
 
 .gps{
-    margin: 50px;
+    margin: 80px;
+    
 }
 
-.buttons a {
-    text-decoration: none;
-    font-size: 28px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background: #56b3e9;
-    color: #f1f1f1;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
+.navbar-toggler-icon{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
 }
 
-
-
-@media(min-width:500px){
-    .contenedor{
-        grid-template-columns: 1fr 3fr;
-        grid-template-areas: 
-        "header header "
-        "nav nav"
-        "section section"
-        "section section"
-        "section section"
-        "footer footer";
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: space-between;
-        border: 1px solid black;
-        border: 2cm;
-    }
-}
-
-@media(min-width:700px){
-    .contenedor{
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-areas: 
-        "header header header"
-        "nav nav nav"
-        "section section section"
-        "section section section"
-        "section section section"
-        "footer footer footer";
-    }
-
-   
+.p-ubicados{
+    font-size: 1.8rem;
 }
