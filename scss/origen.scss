@@ -1,22 +1,16 @@
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-:root{
-    --color-principal: black;
-    --color-secundario: blue;
 
-}
+@import"estructura";
 
-$blanco: white;  
+@import"colores";
+ 
+
 
 .navbar-brand{
     font-size: 2rem;
-    color: var(--color-principal);
+    color: $negro;
     .navbar-brand:hover{
-        color: var(--color-principal);
+        color: $negro;
     }
 }
 
@@ -24,10 +18,10 @@ $blanco: white;
 .nav-link{
     margin: 10px;
     margin-left: 10px;
-    color: var(--color-principal);
+    color:$negro ;
     text-transform: uppercase;
     .nav-link:hover{
-        color: var(--color-principal);
+        color: $negro;
     }
 }
 
@@ -37,14 +31,14 @@ $blanco: white;
     border-radius: 60px;
     outline: none;
     margin-right: -35px;
-    border: 2px solid var(--color-secundario);
+    border: 2px solid $azul;
 }
 .btn0{
     height: 28px;
     width: 40%;
     outline: none;
     border: none;
-    background: var(--color-secundario);
+    background-color: $azul;
     color: $blanco;
     border-radius: 60px;
     font-weight: 700;
@@ -64,19 +58,14 @@ $blanco: white;
 
 
 .btn1{
+    @extend.btn0;
     height: 45px;
     width: 35%;
-    border: none;
-    outline: none;
-    background-color: blue;
-    color: white;
-    font-weight: 700;
-    border-radius: 60px;
-   
     
+       
 }
 .btn1:hover{
-    background-color: rgb(0, 200, 255);
+    background-color: $celeste;
     transition: 0.5s;
 }
 
@@ -112,3 +101,4 @@ h1{
         font-size: 1.8rem;
     }
 }
+

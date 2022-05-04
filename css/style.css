@@ -4,27 +4,22 @@
   box-sizing: border-box;
 }
 
-:root {
-  --color-principal: black;
-  --color-secundario: blue;
-}
-
 .navbar-brand {
   font-size: 2rem;
-  color: var(--color-principal);
+  color: black;
 }
 .navbar-brand .navbar-brand:hover {
-  color: var(--color-principal);
+  color: black;
 }
 
 .nav-link {
   margin: 10px;
   margin-left: 10px;
-  color: var(--color-principal);
+  color: black;
   text-transform: uppercase;
 }
 .nav-link .nav-link:hover {
-  color: var(--color-principal);
+  color: black;
 }
 
 .search {
@@ -33,22 +28,22 @@
   border-radius: 60px;
   outline: none;
   margin-right: -35px;
-  border: 2px solid var(--color-secundario);
+  border: 2px solid blue;
 }
 
-.btn0 {
+.btn0, .btn1 {
   height: 28px;
   width: 40%;
   outline: none;
   border: none;
-  background: var(--color-secundario);
+  background-color: blue;
   color: white;
   border-radius: 60px;
   font-weight: 700;
 }
 
 .main {
-  background: url("../img/cuico padel copy.jpg");
+  background: url("../img/cuico padel.png");
   background-size: cover;
   height: 100vh;
   background-position: 50% 50%;
@@ -62,12 +57,6 @@
 .btn1 {
   height: 45px;
   width: 35%;
-  border: none;
-  outline: none;
-  background-color: blue;
-  color: white;
-  font-weight: 700;
-  border-radius: 60px;
 }
 
 .btn1:hover {
